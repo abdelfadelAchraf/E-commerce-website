@@ -25,7 +25,10 @@ The project follows the **MVC (Model-View-Controller)** pattern:
 - **Model (MongoDB):** Handles database interactions (User, Product, Order, etc.)
 - **View (React.js):** User interface (Frontend pages)
 - **Controller (Express.js & Node.js):** Manages logic and communication between Model and View
-![mvc](https://github.com/user-attachments/assets/2bb18782-518b-49ae-84c4-d1bef5dd31a5)
+
+![Working-of-MVC](https://github.com/user-attachments/assets/1ed1056e-319e-44ff-beb8-d2e8bd9da9d7)
+
+
 ## **Use Case Diagram (UML)**
 The following diagram represents the **use case interactions** of the project:
 
@@ -62,8 +65,9 @@ Admin --> UC8
 
 @enduml
 ```
-![image](https://github.com/user-attachments/assets/1c7dc791-4d13-4a5a-a91a-3ac94383d431)
 
+
+![image](https://github.com/user-attachments/assets/332a51e3-706d-49ec-bba1-cce5970556c7)
 
 
 
@@ -91,7 +95,8 @@ BE -> FE: Displays order confirmation
 
 @enduml
 ```
-![image](https://github.com/user-attachments/assets/b82a17f3-b20c-483f-9f09-446e513097ef)
+![image](https://github.com/user-attachments/assets/facdb687-d08c-494d-a0cf-13a537f4e416)
+
 - The following diagram represents the **account creation process**:
 
 ```plantuml
@@ -111,7 +116,8 @@ BE -> FE: Returns success message
 FE -> Visitor: Displays confirmation
 @enduml
 ```
-![image](https://github.com/user-attachments/assets/c5a8a3b3-e158-49ae-bc44-cb1e9a30ea07)
+![image](https://github.com/user-attachments/assets/ecdaeacd-71e3-48b4-98fd-9487d50684c4)
+)
 
 - The following diagram represents the **login process**:
 
@@ -131,7 +137,8 @@ FE -> User: Stores token and redirects
 
 @enduml
 ```
-![image](https://github.com/user-attachments/assets/e731c2cd-ce24-41c9-9779-b1f03d595116)
+![image](https://github.com/user-attachments/assets/269e39ff-cb5b-48fa-963d-d36b8d0a5565)
+
 
 
 - The following diagram represents the **Checkout & Payment process**:
@@ -157,7 +164,8 @@ FE -> User: Displays success message
 
 @enduml
 ```
-![image](https://github.com/user-attachments/assets/a511d6a5-f7dd-4e79-9a55-fd0945c24492)
+![image](https://github.com/user-attachments/assets/fcc42c04-5cef-4d54-b063-63385d9d9ce2)
+
 
 
 - The following diagram represents the **Admin Adds a Product process**:
@@ -178,8 +186,8 @@ FE -> Admin: Displays confirmation
 
 @enduml
 ```
+![image](https://github.com/user-attachments/assets/efe25ded-f87c-4e74-9281-dd68d9d5cfaa)
 
-![Working-of-MVC](https://github.com/user-attachments/assets/7f48b035-2b28-41ad-bc39-c6f1c3f62cf3)
 
 ## **Class Diagram (UML)**
 The following diagram represents the **class structure** of the project:
@@ -238,7 +246,8 @@ Admin "1" -- "*" Order : oversees
 
 @enduml
 ```
-![image](https://github.com/user-attachments/assets/bd0118e6-63ff-4ea7-9c4b-ef72b94fb797)
+![image](https://github.com/user-attachments/assets/690d73bc-75e7-4efb-969e-ec8b26ea25d2)
+
 
 
 ## **Installation & Setup**
