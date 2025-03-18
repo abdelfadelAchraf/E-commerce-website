@@ -189,66 +189,6 @@ FE -> Admin: Displays confirmation
 ![image](https://github.com/user-attachments/assets/efe25ded-f87c-4e74-9281-dd68d9d5cfaa)
 
 
-## **Class Diagram (UML)**
-The following diagram represents the **class structure** of the project:
-
-```plantuml
-@startuml
-
-class User {
-  +id: int
-  +name: string
-  +email: string
-  +password: string
-  +placeOrder(order: Order)
-}
-
-class Product {
-  +id: int
-  +name: string
-  +price: float
-  +description: string
-  +category: string
-}
-
-class Order {
-  +id: int
-  +userId: int
-  +totalAmount: float
-  +status: string
-  +products: List<Product>
-  +placeOrder(): void
-}
-
-class Cart {
-  +id: int
-  +userId: int
-  +products: List<Product>
-  +addProduct(product: Product): void
-  +removeProduct(product: Product): void
-}
-
-class Admin {
-  +id: int
-  +name: string
-  +email: string
-  +password: string
-  +addProduct(product: Product): void
-  +listProducts(): List<Product>
-  +manageOrders(): void
-}
-
-User "1" -- "*" Order
-Order "*" -- "*" Product
-User "1" -- "1" Cart
-Admin "1" -- "*" Product : manages
-Admin "1" -- "*" Order : oversees
-
-@enduml
-```
-![image](https://github.com/user-attachments/assets/690d73bc-75e7-4efb-969e-ec8b26ea25d2)
-
-
 ## **Screenshots**
 ![Screenshot 2025-03-16 223909](https://github.com/user-attachments/assets/4e657098-8ba4-495c-a0c2-9a76512c11fa)
 
